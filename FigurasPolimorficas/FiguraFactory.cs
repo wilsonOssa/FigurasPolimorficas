@@ -9,6 +9,8 @@ namespace FigurasPolimorficas
         {
             switch (tipo)
             {
+                case "Rectángulo":
+                    return new Rectangulo(color, posicion, 80, 50);
                 case "Círculo":
                     return new Circulo(color, posicion, 50);
                 case "Línea":

@@ -1,20 +1,22 @@
-﻿using FigurasPolimorficas;
-using System.Drawing;
+﻿using System.Drawing;
 
-public class Linea : Figura
+namespace FigurasPolimorficas
 {
-    public Point Fin { get; set; }
-
-    public Linea(Color color, Point inicio, Point fin) : base(color, inicio)
+    public class Linea : Figura
     {
-        Fin = fin;
-    }
+        public Point Fin { get; set; }
 
-    public override void Dibujar(Graphics g)
-    {
-        using (Pen pen = new Pen(Color, 2))
+        public Linea(Color color, Point inicio, Point fin) : base(color, inicio)
         {
-            g.DrawLine(pen, Posicion, Fin);
+            Fin = fin;
+        }
+
+        public override void Dibujar(Graphics g)
+        {
+            using (Pen pen = new Pen(Color, 2))
+            {
+                g.DrawLine(pen, Posicion, Fin);
+            }
         }
     }
 }

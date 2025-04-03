@@ -1,20 +1,22 @@
-﻿using FigurasPolimorficas;
-using System.Drawing;
+﻿using System.Drawing;
 
-public class Circulo : Figura
+namespace FigurasPolimorficas
 {
-    public int Radio { get; set; }
-
-    public Circulo(Color color, Point posicion, int radio) : base(color, posicion)
+    public class Circulo : Figura
     {
-        Radio = radio;
-    }
+        public int Radio { get; set; }
 
-    public override void Dibujar(Graphics g)
-    {
-        using (Pen pen = new Pen(Color, 2))
+        public Circulo(Color color, Point posicion, int radio) : base(color, posicion)
         {
-            g.DrawEllipse(pen, Posicion.X, Posicion.Y, Radio * 2, Radio * 2);
+            Radio = radio;
+        }
+
+        public override void Dibujar(Graphics g)
+        {
+            using (Pen pen = new Pen(Color, 2))
+            {
+                g.DrawEllipse(pen, Posicion.X - Radio, Posicion.Y - Radio, Radio * 2, Radio * 2);
+            }
         }
     }
 }

@@ -1,0 +1,10 @@
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\bin\Debug\FigurasPolimorficas.exe.config
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\bin\Debug\FigurasPolimorficas.exe
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\bin\Debug\FigurasPolimorficas.pdb
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.csproj.AssemblyReference.cache
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.Form1.resources
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.Properties.Resources.resources
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.csproj.GenerateResource.cache
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.csproj.CoreCompileInputs.cache
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.exe
+C:\Users\wilso\OneDrive\Escritorio\Nueva carpeta\FigurasPolimorficas\FigurasPolimorficas\obj\Debug\FigurasPolimorficas.pdb
