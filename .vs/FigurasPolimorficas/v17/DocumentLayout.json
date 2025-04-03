@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|c:\\users\\wilso\\onedrive\\escritorio\\nueva carpeta\\figuraspolimorficas\\figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|c:\\users\\wilso\\onedrive\\escritorio\\nueva carpeta\\figuraspolimorficas\\figuraspolimorficas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\figuraspolimorficas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|c:\\users\\wilso\\onedrive\\escritorio\\nueva carpeta\\figuraspolimorficas\\figuraspolimorficas\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\figuraspolimorficas\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\figuraspolimorficas\\linea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\linea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BE03062F-8953-45BA-80D3-EBC6CF80299D}|FigurasPolimorficas\\FigurasPolimorficas.csproj|solutionrelative:figuraspolimorficas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Rectangulo.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\Rectangulo.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\Rectangulo.cs",
@@ -66,12 +66,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\Rectangulo.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T22:19:28.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T22:19:28.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\Form1.Designer.cs",
@@ -84,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\Form1.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\Form1.cs",
@@ -97,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FiguraFactory.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\FiguraFactory.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\FiguraFactory.cs",
@@ -105,12 +104,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\FiguraFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T21:09:57.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:09:57.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "triangulo.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\triangulo.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\triangulo.cs",
@@ -118,12 +116,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\triangulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T21:07:54.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:07:54.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "linea.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\linea.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\linea.cs",
@@ -131,12 +128,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\linea.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T21:07:16.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:07:16.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "circulo.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\circulo.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\circulo.cs",
@@ -144,12 +140,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\circulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T21:06:11.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:06:11.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Figura.cs",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\Figura.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\Figura.cs",
@@ -157,12 +152,11 @@
               "RelativeToolTip": "FigurasPolimorficas\\Figura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T21:02:24.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:02:24.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\wilso\\OneDrive\\Escritorio\\Nueva carpeta\\FigurasPolimorficas\\FigurasPolimorficas\\Form1.cs",
               "RelativeDocumentMoniker": "FigurasPolimorficas\\Form1.cs",
