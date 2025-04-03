@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigurasPolimorficas", "FigurasPolimorficas\FigurasPolimorficas.csproj", "{BE03062F-8953-45BA-80D3-EBC6CF80299D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE03062F-8953-45BA-80D3-EBC6CF80299D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE03062F-8953-45BA-80D3-EBC6CF80299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE03062F-8953-45BA-80D3-EBC6CF80299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE03062F-8953-45BA-80D3-EBC6CF80299D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {982F01D4-8348-4117-870F-F95D9DDD6AAF}
+	EndGlobalSection
+EndGlobal
