@@ -5,20 +5,29 @@ namespace FigurasPolimorficas
 {
     public static class FiguraFactory
     {
+        private const int TAMANO_BASE = 50;
+
         public static Figura CrearFigura(string tipo, Color color, Point posicion)
         {
-            switch (tipo)
+            if (string.IsNullOrWhiteSpace(tipo))
+                throw new ArgumentException("El tipo de figura no puede estar vacío.");
+
+            switch (tipo.ToLower())
             {
-                case "Rectángulo":
-                    return new Rectangulo(color, posicion, 80, 50);
-                case "Círculo":
-                    return new Circulo(color, posicion, 50);
-                case "Línea":
-                    return new Linea(color, posicion, new Point(posicion.X + 100, posicion.Y));
-                case "Triángulo":
-                    return new Triangulo(color, posicion, 50);
+                case "rectángulo":
+                case "rectangulo":
+                    return new Rectangulo(color, posicion, TAMANO_BASE * 1.6f, TAMANO_BASE);
+                case "círculo":
+                case "circulo":
+                    return new Circulo(color, posicion, TAMANO_BASE);
+                case "línea":
+                case "linea":
+                    return new Linea(color, posicion, new Point(posicion.X + TAMANO_BASE * 2, posicion.Y));
+                case "triángulo":
+                case "triangulo":
+                    return new Triangulo(color, posicion, TAMANO_BASE);
                 default:
-                    return null;
+                    throw new ArgumentException($"Tipo de figura no soportado: {tipo}");
             }
         }
     }

@@ -4,13 +4,13 @@ namespace FigurasPolimorficas
 {
     public class Rectangulo : Figura
     {
-        public int Ancho { get; set; }
-        public int Alto { get; set; }
+        public float Ancho { get; set; }
+        public float Alto { get; set; }
 
-        public Rectangulo(Color color, Point posicion, int ancho, int alto) : base(color, posicion)
+        public Rectangulo(Color color, Point posicion, float ancho, float alto) : base(color, posicion)
         {
-            Ancho = ancho;
-            Alto = alto;
+            Ancho = ancho > 0 ? ancho : 50;
+            Alto = alto > 0 ? alto : 30;
         }
 
         public override void Dibujar(Graphics g)

@@ -32,14 +32,14 @@
             this.txtPosX = new System.Windows.Forms.TextBox();
             this.txtPosY = new System.Windows.Forms.TextBox();
             this.txtContador = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxcolor = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcolor)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbFigura
@@ -70,17 +70,6 @@
             this.txtContador.Name = "txtContador";
             this.txtContador.Size = new System.Drawing.Size(100, 20);
             this.txtContador.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(202, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(491, 348);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // btnCrear
             // 
@@ -127,24 +116,33 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "contador";
             // 
+            // pictureBoxcolor
+            // 
+            this.pictureBoxcolor.ErrorImage = null;
+            this.pictureBoxcolor.Location = new System.Drawing.Point(226, 92);
+            this.pictureBoxcolor.Name = "pictureBoxcolor";
+            this.pictureBoxcolor.Size = new System.Drawing.Size(393, 251);
+            this.pictureBoxcolor.TabIndex = 10;
+            this.pictureBoxcolor.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBoxcolor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCrear);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtContador);
             this.Controls.Add(this.txtPosY);
             this.Controls.Add(this.txtPosX);
             this.Controls.Add(this.cmbFigura);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcolor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,13 +154,13 @@
         private System.Windows.Forms.TextBox txtPosX;
         private System.Windows.Forms.TextBox txtPosY;
         private System.Windows.Forms.TextBox txtContador;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBoxcolor;
     }
 }
 

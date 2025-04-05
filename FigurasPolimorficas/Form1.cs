@@ -7,44 +7,54 @@ namespace FigurasPolimorficas
 {
     public partial class Form1 : Form
     {
-        private List<Figura> figuras = new List<Figura>();  // Lista de figuras creadas
-        private Color colorSeleccionado = Color.Black;  // Color por defecto
+        private List<Figura> figuras = new List<Figura>();
+        private Color colorSeleccionado = Color.Black;
 
         public Form1()
         {
             InitializeComponent();
-
-            // Agregar opciones al ComboBox
-            cmbFigura.Items.Add("Rectángulo");
-            cmbFigura.Items.Add("Círculo");
-            cmbFigura.Items.Add("Línea");
-            cmbFigura.Items.Add("Triángulo");
-            cmbFigura.SelectedIndex = 0;  // Seleccionar el primer elemento por defecto
-
-            // Enlazar el evento Paint del PictureBox
-            pictureBox1.Paint += pictureBox1_Paint;
+            ConfigurarControles();
         }
 
-        // Seleccionar un color con el ColorDialog
+        private void ConfigurarControles()
+        {
+            // Configurar ComboBox
+            cmbFigura.Items.AddRange(new string[] { "Rectángulo", "Círculo", "Línea", "Triángulo" });
+            cmbFigura.SelectedIndex = 0;
+
+            // Configurar PictureBox de color
+            pictureBoxcolor.BackColor = colorSeleccionado;
+            pictureBoxcolor.BorderStyle = BorderStyle.FixedSingle;
+
+            // Configurar PictureBox de dibujo
+            pictureBoxcolor.BackColor = Color.White;
+            pictureBoxcolor.BorderStyle = BorderStyle.FixedSingle;
+
+            // Configurar TextBox de contador
+            txtContador.ReadOnly = true;
+            txtContador.Text = "0";
+
+            // Conectar eventos
+            btnCrear.Click += btnCrear_Click;
+            pictureBoxcolor.Click += pictureBoxColor_Click;
+            pictureBoxcolor.Paint += pictureBox1_Paint;
+        }
+
         private void pictureBoxColor_Click(object sender, EventArgs e)
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 colorSeleccionado = colorDialog1.Color;
-                pictureBox1.BackColor = colorSeleccionado;  // Cambia el fondo al color seleccionado
+                pictureBoxcolor.BackColor = colorSeleccionado;
             }
         }
 
-        // Crear una nueva figura y redibujar
         private void btnCrear_Click(object sender, EventArgs e)
         {
             try
             {
-                if (!int.TryParse(txtPosX.Text, out int x) || !int.TryParse(txtPosY.Text, out int y))
-                {
-                    MessageBox.Show("Ingrese coordenadas válidas (números enteros).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (!ValidarCoordenadas(out int x, out int y))
                     return;
-                }
 
                 string tipoFigura = cmbFigura.SelectedItem.ToString();
                 Figura nuevaFigura = FiguraFactory.CrearFigura(tipoFigura, colorSeleccionado, new Point(x, y));
@@ -52,8 +62,8 @@ namespace FigurasPolimorficas
                 if (nuevaFigura != null)
                 {
                     figuras.Add(nuevaFigura);
-                    txtContador.Text = figuras.Count.ToString();  // Actualizar contador
-                    pictureBox1.Refresh();  // Forzar el redibujado
+                    txtContador.Text = figuras.Count.ToString();
+                    pictureBoxcolor.Invalidate();
                 }
                 else
                 {
@@ -62,19 +72,39 @@ namespace FigurasPolimorficas
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // Redibujar el PictureBox
+        private bool ValidarCoordenadas(out int x, out int y)
+        {
+            x = y = 0;
+
+            if (!int.TryParse(txtPosX.Text, out x) || !int.TryParse(txtPosY.Text, out y))
+            {
+                MessageBox.Show("Ingrese coordenadas válidas (números enteros).", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (x < 0 || y < 0)
+            {
+                MessageBox.Show("Las coordenadas no pueden ser negativas.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
+
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            Graphics g = e.Graphics;
-            g.Clear(Color.White);  // Limpiar el área de dibujo
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            e.Graphics.Clear(Color.White);
 
             foreach (var figura in figuras)
             {
-                figura.Dibujar(g);
+                figura.Dibujar(e.Graphics);
             }
         }
     }

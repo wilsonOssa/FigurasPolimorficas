@@ -4,11 +4,11 @@ namespace FigurasPolimorficas
 {
     public class Circulo : Figura
     {
-        public int Radio { get; set; }
+        public float Radio { get; set; }
 
-        public Circulo(Color color, Point posicion, int radio) : base(color, posicion)
+        public Circulo(Color color, Point posicion, float radio) : base(color, posicion)
         {
-            Radio = radio;
+            Radio = radio > 0 ? radio : 25;
         }
 
         public override void Dibujar(Graphics g)
